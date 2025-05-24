@@ -8,7 +8,7 @@ The project uses the physical measurements of Iris flowers—like petal and sepa
 
 I started by uploading the dataset in CSV format. This dataset contains labeled measurements of 150 flowers across three species.
 
-This part:
+
 import pandas as pd
 
 df = pd.read_csv("Iris.csv")
