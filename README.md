@@ -115,6 +115,6 @@ Trained a Random Forest Classifier to learn the patterns.
 
 Evaluated the model's accuracy using metrics and a confusion matrix.
 
-The model achieved high accuracy and demonstrates a basic, yet powerful example of supervised classification in machine learning. This project helped me strengthen my understanding of data preprocessing, model training, and evaluation.
+The model achieved high accuracy and demonstrates a basic example of supervised classification in machine learning. This project helped me strengthen my understanding of data preprocessing, model training, and evaluation.
 
 
