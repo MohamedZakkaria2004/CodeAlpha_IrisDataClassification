@@ -1,5 +1,5 @@
 # CodeAlpha_IrisDataClassification
-ML model to classify Iris flowers based on measurements using Scikit-learn
+ML model to classify Iris flowers based on measurements using Scikit-learn.
 
 
 The project uses the physical measurements of Iris flowers—like petal and sepal length and width—to predict which species the flower belongs to: Setosa, Versicolor, or Virginica.
