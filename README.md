@@ -4,10 +4,10 @@ ML model to classify Iris flowers based on measurements using Scikit-learn
 
 The project uses the physical measurements of Iris flowers—like petal and sepal length and width—to predict which species the flower belongs to: Setosa, Versicolor, or Virginica.
 
-**📂 [Step 1: Dataset Preparation]
-**
-**I started by uploading the dataset in CSV format. This dataset contains labeled measurements of 150 flowers across three species.
-**
+📂 [Step 1: Dataset Preparation]
+
+I started by uploading the dataset in CSV format. This dataset contains labeled measurements of 150 flowers across three species.
+
 This part:
 import pandas as pd
 
@@ -18,8 +18,8 @@ print(df.head())
 Here, I loaded the data using Pandas and printed the first few rows to see what the data looks like.
 
 🧹 [Step 2: Data Preprocessing]
-**I cleaned the data by removing the 'Id' column, since it doesn’t help with prediction. Then, I used Label Encoding to convert the species names into numbers so the model can understand them.
-**
+I cleaned the data by removing the 'Id' column, since it doesn’t help with prediction. Then, I used Label Encoding to convert the species names into numbers so the model can understand them.
+
 from sklearn.preprocessing import LabelEncoder
 
 df = df.drop("Id", axis=1)
