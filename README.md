@@ -16,7 +16,7 @@ print(df.head())
 Here, I loaded the data using Pandas and printed the first few rows to see what the data looks like.
 
 🧹 [Step 2: Data Preprocessing]
-"I cleaned the data by removing the 'Id' column, since it doesn’t help with prediction. Then, I used Label Encoding to convert the species names into numbers so the model can understand them."
+I cleaned the data by removing the 'Id' column, since it doesn’t help with prediction. Then, I used Label Encoding to convert the species names into numbers so the model can understand them.
 
 from sklearn.preprocessing import LabelEncoder
 df = df.drop("Id", axis=1)
@@ -26,7 +26,7 @@ df['Species'] = label_encoder.fit_transform(df['Species'])
 
 
 🔀 [Step 3: Splitting the Dataset]
-"Next, I split the data into training and testing sets using an 80-20 split. This helps evaluate how well the model performs on unseen data."
+Next, I split the data into training and testing sets using an 80-20 split. This helps evaluate how well the model performs on unseen data.
 
 from sklearn.model_selection import train_test_split
 X = df.drop("Species", axis=1)
@@ -34,7 +34,7 @@ y = df["Species"]
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
 🤖 [Step 4: Model Training]
-"I used a Random Forest Classifier from Scikit-learn to train the model. It’s a simple yet powerful ensemble method that works well for classification tasks."
+I used a Random Forest Classifier from Scikit-learn to train the model. It’s a simple yet powerful ensemble method that works well for classification tasks.
 
 from sklearn.ensemble import RandomForestClassifier
 
@@ -42,20 +42,20 @@ model = RandomForestClassifier(random_state=42)
 model.fit(X_train, y_train)
 
 📊 [Step 5: Model Evaluation]
-"Once the model was trained, I evaluated it using accuracy score, a classification report, and a confusion matrix."
+Once the model was trained, I evaluated it using accuracy score, a classification report, and a confusion matrix.
 
 from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
 
 y_pred = model.predict(X_test)
 
 print("Accuracy:", accuracy_score(y_test, y_pred))
-print("Classification Report:\n", classification_report(y_test, y_pred))
-print("Confusion Matrix:\n", confusion_matrix(y_test, y_pred))
+ print("Classification Report:\n", classification_report(y_test, y_pred))
+  print("Confusion Matrix:\n", confusion_matrix(y_test, y_pred))
 
-"The accuracy was quite high, and the classification report showed good precision and recall across all three classes."
+The accuracy was quite high, and the classification report showed good precision and recall across all three classes.
 
 📈 [Step 6: Visualization]
-"To make it more visual, I plotted the confusion matrix using Seaborn."
+To make it more visual, I plotted the confusion matrix using Seaborn.
 import seaborn as sns
 import matplotlib.pyplot as plt
 
@@ -65,7 +65,7 @@ plt.xlabel("Predicted")
 plt.ylabel("Actual")
 plt.show()
 
-"This helps us see how many predictions were correct or misclassified."
+This helps us see how many predictions were correct or misclassified.
 
 Summary:
 I used Scikit-learn and Pandas to load and prepare the data, trained a machine learning model, and evaluated its performance. This project demonstrates basic classification concepts and how to apply them using Python.
